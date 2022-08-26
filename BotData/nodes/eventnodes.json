@@ -12,14 +12,14 @@
           "label": "responses",
           "connections": [
             "0e8ccd24-f7d6-4e5d-b431-593f2404045c",
-            "427633a2-17e1-4515-a610-158a79badf2c",
-            "8ff6d0ca-13b6-4635-8135-2e7a20c851be"
+            "8ff6d0ca-13b6-4635-8135-2e7a20c851be",
+            "059f209f-d4ab-4aee-ae64-b54a5efc1a6a"
           ]
         }
       ],
       "inputs": [],
       "x": 99,
-      "y": 90,
+      "y": 89,
       "perms": []
     },
     {
@@ -91,8 +91,7 @@
         {
           "label": "responses",
           "connections": [
-            "f7bfcbd3-c52f-452d-9c7e-1ca3fae347d4",
-            "a6aa9e35-fe2d-437b-8d0a-eba41098a3a5"
+            "f7bfcbd3-c52f-452d-9c7e-1ca3fae347d4"
           ]
         }
       ],
@@ -710,7 +709,7 @@
           "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888"
         }
       ],
-      "x": 283,
+      "x": 282,
       "y": 546,
       "rtype": "Variable",
       "rsubtype": "Generate Random Number",
@@ -793,7 +792,7 @@
         }
       ],
       "x": 952,
-      "y": 487,
+      "y": 486,
       "rtype": "User Data",
       "rsubtype": "Edit User Data",
       "formdata": [
@@ -868,19 +867,19 @@
           "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f067e"
         }
       ],
-      "x": 727,
-      "y": 23,
+      "x": 725,
+      "y": 24,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
-        "1010462735668092979",
-        "EEFF00",
-        "FS4UCODE - LOBBY",
+        "1012621191569223750",
+        "009DFF",
+        "Witaj!",
         "",
         "",
         "",
         "",
-        "Witaj <@${tempVars.newuser.id}> Aktualnie znajdujesz się na oficjalnym discordzie **FS4UCODE**\nMamy nadzieję, że miło spędzisz z nami swój cenny czas!\n\nLecz zanim zaczniesz rozglądać się na serwerze zapoznaj się z\nregulamiem.\nA jeśli będziesz potrzebować naszej pomocy, skontaktuj się z nami w tickecie! na serwerze discord!!",
+        "Witamy <@${tempVars.newuser.id}> cię na naszym oficjalnym serwerze discord\n**JCode**",
         "",
         "",
         "",
@@ -930,20 +929,20 @@
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
-        "1005734643145916446",
-        "0D00FF",
-        "Weryfikacja",
+        "1012624625148104744",
+        "039AFF",
+        "JCODE",
         "",
         "",
+        "https://media.discordapp.net/attachments/1012621191569223747/1012628305184305172/OIP.jpg?width=427&height=277",
         "",
-        "",
-        "Aby otrzymać dostęp do kanałów potwierdź że nie jesteś botem ",
-        "",
+        "Kliknij przycisk poniżej aby zweryfikować.",
+        "https://media.discordapp.net/attachments/1012621191569223747/1012628305184305172/OIP.jpg?width=427&height=277",
         "",
         "",
         "false",
         "",
-        "temp"
+        "server"
       ],
       "formnames": [
         "channelname",
@@ -966,11 +965,12 @@
           "rowtype": "button",
           "buttons": [
             {
-              "label": "weryfikacja",
+              "label": "Kliknij, aby się zweryfikować!",
               "customid": "1",
-              "style": "PRIMARY",
+              "style": "DANGER",
               "emoji": "",
-              "URL": ""
+              "URL": "",
+              "ephemeral": false
             }
           ]
         }
@@ -1090,7 +1090,7 @@
           "label": "next response",
           "connections": [
             "5ba5f9ba-c1b0-4a10-8368-89c40aeb53fa",
-            "ecd77a84-46f7-487a-afb6-0e46e72cec5d"
+            "262ef81f-e2e0-42ec-bfc8-8e01da4bb338"
           ]
         }
       ],
@@ -1137,50 +1137,17 @@
           "id": "a6e58dd0-748f-47ae-a79a-af9a2c0df55e"
         }
       ],
-      "x": 772,
-      "y": 2910,
+      "x": 771,
+      "y": 2897,
       "rtype": "User Action",
       "rsubtype": "Add Role to User",
       "formdata": [
         "${tempVars.buttoninteraction.member.id}",
-        "1005734635466145874"
+        "1012621191095263302"
       ],
       "formnames": [
         "user",
         "roleName"
-      ],
-      "messageActionRows": [],
-      "valueFields": []
-    },
-    {
-      "type": "response",
-      "name": "usuwanie",
-      "guid": "ecd77a84-46f7-487a-afb6-0e46e72cec5d",
-      "reactionFields": [],
-      "embedfields": [],
-      "outputs": [
-        {
-          "label": "next response",
-          "connections": []
-        }
-      ],
-      "inputs": [
-        {
-          "label": "trigger",
-          "id": "a6e58dd0-748f-47ae-a79a-af9a2c0df55e"
-        }
-      ],
-      "x": 771,
-      "y": 3019,
-      "rtype": "Channel Action",
-      "rsubtype": "Delete All Messages",
-      "formdata": [
-        "${tempVars.buttoninteraction.channelId}",
-        "2"
-      ],
-      "formnames": [
-        "channelname",
-        "msgcount"
       ],
       "messageActionRows": [],
       "valueFields": []
@@ -1210,14 +1177,14 @@
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
-        "1010514759902318683",
-        "E8F000",
-        "FS4UCODE - Złóż zamówienie",
+        "1012621191908950023",
+        "00A4F0",
+        "ZŁOŻ ZAMÓWIEŃIE",
         "",
         "",
         "",
         "",
-        "💡 FS4UCODE ZAMÓWIEŃ\nAby złożyć zamówienie należy wybrać produkt z listy znajdującej się pod wiadomością. Jeżeli chcesz zadać pytanie lub zgłosić błąd udaj się na kanał 🎇・zamów\n\n💸 CENNIK\nWszystkie produkty z cenami znajdziesz w wiadomości na kanale \n🤖・𝘽𝙊𝙏𝙔-𝘿𝙄𝙎𝘾𝙊𝙍𝘿  🧨・makro\n\nTworzenie bezsensownych ticketów może skutkować banem.\nAdministracja odpowie tak szybko jak to możliwe!",
+        "Jeżeli chces kupić coś bota lub pluginy  stwórz ticketa",
         "",
         "",
         "",
@@ -1248,15 +1215,15 @@
             {
               "label": "🤖Bot Discord",
               "customid": "2",
-              "style": "SECONDARY",
+              "style": "PRIMARY",
               "emoji": "",
               "URL": "",
               "ephemeral": false
             },
             {
-              "label": "🧨Makro",
+              "label": "🔧Pluginy",
               "customid": "4",
-              "style": "SECONDARY",
+              "style": "PRIMARY",
               "emoji": "",
               "URL": "",
               "ephemeral": false
@@ -1293,8 +1260,8 @@
       "rtype": "Channel Action",
       "rsubtype": "Create Channel",
       "formdata": [
-        "ticket ",
-        "1010510611563696199",
+        "bot",
+        "1012625969602899969",
         "ticket osoby ${tempVars.buttoninteraction.member.displayName}",
         "Text",
         "kanal_ticket",
@@ -1374,18 +1341,18 @@
         }
       ],
       "x": 784,
-      "y": 3131,
+      "y": 3130,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
         "${tempVars.kanal_ticket.id}",
-        "FFFFFF",
-        "ticket",
+        "05A8FF",
+        "🤖Discord Bot",
         "",
         "",
         "",
         "",
-        "Witaj <@${tempVars.buttoninteraction.member.id}>\nChces zamowić bota muszisz zpingować xvgoo_\n",
+        "Witaj <@${tempVars.buttoninteraction.member.id}>\nChciał byś zamówić bota poczekaj aż sp4och_ odpisze\n",
         "",
         "",
         "",
@@ -1444,12 +1411,12 @@
         }
       ],
       "x": 469,
-      "y": 3241,
+      "y": 3240,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
         "${tempVars.buttoninteraction.channelId}",
-        "FFFFFF",
+        "0DC2FF",
         "potwierdzenie",
         "",
         "",
@@ -1520,7 +1487,7 @@
           "id": "8f1af73f-5dc3-40ff-b501-f1321483abcc"
         }
       ],
-      "x": 810,
+      "x": 811,
       "y": 3401,
       "rtype": "Channel Action",
       "rsubtype": "Delete Channel",
@@ -1664,7 +1631,7 @@
           "id": "6c073df9-ace8-4a54-949e-d4a231ce5b2b"
         }
       ],
-      "x": 971,
+      "x": 969,
       "y": 3134,
       "rtype": "Channel Action",
       "rsubtype": "Delete All Messages",
@@ -1697,8 +1664,8 @@
           "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f067e"
         }
       ],
-      "x": 248,
-      "y": 234,
+      "x": 219,
+      "y": 251,
       "rtype": "User Action",
       "rsubtype": "Add Role to User",
       "formdata": [
@@ -2286,6 +2253,8 @@
       "guid": "6eb751a4-8103-489f-b408-8ad54ca284ef",
       "reactionFields": [],
       "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -2300,8 +2269,8 @@
           "id": "f7bfcbd3-c52f-452d-9c7e-1ca3fae347d4"
         }
       ],
-      "x": 623,
-      "y": 757,
+      "x": 624,
+      "y": 756,
       "rtype": "Channel Action",
       "rsubtype": "Delete All Messages",
       "formdata": [
@@ -3919,8 +3888,6 @@
       "guid": "dc414138-b836-4823-a96d-90b36f9dcd83",
       "reactionFields": [],
       "embedfields": [],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -3962,8 +3929,6 @@
       "guid": "ade4666b-6f8f-4bd6-b461-379def4a9039",
       "reactionFields": [],
       "embedfields": [],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -4196,8 +4161,6 @@
       "guid": "6250f949-44c3-4f01-8b48-8845eb283048",
       "reactionFields": [],
       "embedfields": [],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -4268,8 +4231,6 @@
       "guid": "29c82e87-a98e-46d6-b854-c2ca32417e9c",
       "reactionFields": [],
       "embedfields": [],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -4458,7 +4419,7 @@
         }
       ],
       "x": 619,
-      "y": 636,
+      "y": 637,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -4541,8 +4502,8 @@
           "id": "2e50dc82-24bd-4502-8da0-7536c095392e"
         }
       ],
-      "x": 783,
-      "y": 274,
+      "x": 777,
+      "y": 270,
       "rtype": "Channel Action",
       "rsubtype": "Create Channel",
       "formdata": [
@@ -4628,10 +4589,14 @@
         {
           "label": "trigger",
           "id": "69ebbc23-2903-4f05-ab69-bc9ecb4f067e"
+        },
+        {
+          "label": "trigger",
+          "id": []
         }
       ],
-      "x": 620,
-      "y": 235,
+      "x": 594,
+      "y": 245,
       "rtype": "Control",
       "rsubtype": "Multiple Input",
       "messageActionRows": []
@@ -4690,8 +4655,8 @@
       "rtype": "Channel Action",
       "rsubtype": "Create Channel",
       "formdata": [
-        "ticket1",
-        "1010510611563696199",
+        "Pluginy",
+        "1012625969602899969",
         "ticket osoby ${tempVars.buttoninteraction.user.tag}",
         "Text",
         "kanal_ticket",
@@ -4884,19 +4849,19 @@
           "id": "0c8d94e0-36f2-436f-b667-d2e46a04b5ad"
         }
       ],
-      "x": 1029,
+      "x": 1031,
       "y": 3268,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
         "${tempVars.kanal_ticket.id}",
-        "FFFFFF",
-        "ticket",
+        "03B7FF",
+        "🔧Pluginy",
         "",
         "",
         "",
         "",
-        "Witaj <@${tempVars.buttoninteraction.member.id}>\nChces kupić makro muszisz Zpingować\nxvgoo_ TheSzlamek lub mlodaka\n",
+        "Witaj <@${tempVars.buttoninteraction.member.id}>\nChciał byś kupić pluginy poczekaj aż sp4och_ odpisze",
         "",
         "",
         "",
@@ -4989,7 +4954,7 @@
         }
       ],
       "x": 490,
-      "y": 1032,
+      "y": 1031,
       "rtype": "Message",
       "rsubtype": "Send Embed",
       "formdata": [
@@ -5046,6 +5011,8 @@
       "name": "usun wiadomosci_1",
       "guid": "e3f3923f-4848-4c49-8c8a-f519c69c97be",
       "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -5060,7 +5027,7 @@
           "id": "a6aa9e35-fe2d-437b-8d0a-eba41098a3a5"
         }
       ],
-      "x": 675,
+      "x": 676,
       "y": 1018,
       "rtype": "Channel Action",
       "rsubtype": "Delete All Messages",
@@ -5346,6 +5313,39 @@
         "msgcount"
       ],
       "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "usuwanie_1_3",
+      "guid": "262ef81f-e2e0-42ec-bfc8-8e01da4bb338",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a6e58dd0-748f-47ae-a79a-af9a2c0df55e"
+        }
+      ],
+      "x": 769,
+      "y": 3013,
+      "rtype": "Channel Action",
+      "rsubtype": "Delete All Messages",
+      "formdata": [
+        "${tempVars.buttoninteraction.channelId}",
+        "2"
+      ],
+      "formnames": [
+        "channelname",
+        "msgcount"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
     }
   ]
 }
