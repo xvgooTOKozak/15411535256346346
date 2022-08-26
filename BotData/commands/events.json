@@ -14,32 +14,58 @@
           "fieldvalue": "0"
         },
         {
-          "name": "autorole",
-          "category": "User Action",
-          "type": "Add Role to User",
-          "messageActionRows": [],
-          "user": "${tempVars.newuser.id}",
-          "rolename": "niezweryfikowany"
-        },
-        {
           "name": "powitanie",
           "category": "Message",
           "type": "Send Embed",
           "messageActionRows": [],
-          "channelname": "1010462735668092979",
-          "color": "EEFF00",
-          "title": "FS4UCODE - LOBBY",
+          "channelname": "1012621191569223750",
+          "color": "009DFF",
+          "title": "Witaj!",
           "url": "",
           "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "Witaj <@${tempVars.newuser.id}> Aktualnie znajdujesz się na oficjalnym discordzie **FS4UCODE**\nMamy nadzieję, że miło spędzisz z nami swój cenny czas!\n\nLecz zanim zaczniesz rozglądać się na serwerze zapoznaj się z\nregulamiem.\nA jeśli będziesz potrzebować naszej pomocy, skontaktuj się z nami w tickecie! na serwerze discord!!",
+          "description": "Witamy <@${tempVars.newuser.id}> cię na naszym oficjalnym serwerze discord\n**JCode**",
           "thumbnail": "",
           "image": "",
           "footer": "",
           "timestamp": "false",
           "savetovariable": "",
           "savetovariabletype": "temp"
+        },
+        {
+          "name": "msg_weryfikacja",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [
+            {
+              "rowtype": "button",
+              "buttons": [
+                {
+                  "label": "Kliknij, aby się zweryfikować!",
+                  "customid": "1",
+                  "style": "DANGER",
+                  "emoji": "",
+                  "URL": "",
+                  "ephemeral": false
+                }
+              ]
+            }
+          ],
+          "channelname": "1012624625148104744",
+          "color": "039AFF",
+          "title": "JCODE",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "https://media.discordapp.net/attachments/1012621191569223747/1012628305184305172/OIP.jpg?width=427&height=277",
+          "authorlink": "",
+          "description": "Kliknij przycisk poniżej aby zweryfikować.",
+          "thumbnail": "https://media.discordapp.net/attachments/1012621191569223747/1012628305184305172/OIP.jpg?width=427&height=277",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "server"
         },
         {
           "name": "level_set_0",
@@ -355,15 +381,15 @@
                 {
                   "label": "🤖Bot Discord",
                   "customid": "2",
-                  "style": "SECONDARY",
+                  "style": "PRIMARY",
                   "emoji": "",
                   "URL": "",
                   "ephemeral": false
                 },
                 {
-                  "label": "🎉Nagroda",
+                  "label": "🔧Pluginy",
                   "customid": "4",
-                  "style": "SECONDARY",
+                  "style": "PRIMARY",
                   "emoji": "",
                   "URL": "",
                   "ephemeral": false
@@ -371,48 +397,14 @@
               ]
             }
           ],
-          "channelname": "1009120462816690259",
-          "color": "#003aff",
-          "title": "Złóż zamówienie",
+          "channelname": "1012621191908950023",
+          "color": "00A4F0",
+          "title": "ZŁOŻ ZAMÓWIEŃIE",
           "url": "",
           "authorname": "",
           "authorimageurl": "",
           "authorlink": "",
-          "description": "💡 Jeżeli chcesz kupić lub odebrac jakiś przedmiot Kliknij reakcje!",
-          "thumbnail": "",
-          "image": "",
-          "footer": "",
-          "timestamp": "false",
-          "savetovariable": "",
-          "savetovariabletype": "temp"
-        },
-        {
-          "name": "ticket_1",
-          "category": "Message",
-          "type": "Send Embed",
-          "messageActionRows": [
-            {
-              "rowtype": "button",
-              "buttons": [
-                {
-                  "label": "🎫zgłoszenie",
-                  "customid": "6",
-                  "style": "SECONDARY",
-                  "emoji": "",
-                  "URL": "",
-                  "ephemeral": false
-                }
-              ]
-            }
-          ],
-          "channelname": "1010532010596519957",
-          "color": "E8F000",
-          "title": "FS4UCODE -ZGŁOSZENIA",
-          "url": "",
-          "authorname": "",
-          "authorimageurl": "",
-          "authorlink": "",
-          "description": "Masz Jakiś Problem lub błąd stwórz ticketa",
+          "description": "Jeżeli chces kupić coś bota lub pluginy  stwórz ticketa",
           "thumbnail": "",
           "image": "",
           "footer": "",
@@ -422,14 +414,6 @@
         },
         {
           "name": "usun wiadomosci",
-          "category": "Channel Action",
-          "type": "Delete All Messages",
-          "messageActionRows": [],
-          "channelname": "920323518351151104",
-          "msgcount": "3"
-        },
-        {
-          "name": "usun wiadomosci_1",
           "category": "Channel Action",
           "type": "Delete All Messages",
           "messageActionRows": [],
@@ -470,26 +454,6 @@
               ]
             }
           ],
-          "channelname": "920323518351151104",
-          "color": "FFFFFF",
-          "title": "wiek",
-          "url": "",
-          "authorname": "",
-          "authorimageurl": "",
-          "authorlink": "",
-          "description": "Wybierz role wieku",
-          "thumbnail": "",
-          "image": "",
-          "footer": "",
-          "timestamp": "false",
-          "savetovariable": "",
-          "savetovariabletype": "temp"
-        },
-        {
-          "name": "wiek msg_1",
-          "category": "Message",
-          "type": "Send Embed",
-          "messageActionRows": [],
           "channelname": "920323518351151104",
           "color": "FFFFFF",
           "title": "wiek",
@@ -548,26 +512,6 @@
           "savetovariabletype": "temp"
         },
         {
-          "name": "ping msg_1",
-          "category": "Message",
-          "type": "Send Embed",
-          "messageActionRows": [],
-          "channelname": "920323518351151104",
-          "color": "FFFFFF",
-          "title": "ping",
-          "url": "",
-          "authorname": "",
-          "authorimageurl": "",
-          "authorlink": "",
-          "description": "czy chcesz być pingowany?",
-          "thumbnail": "",
-          "image": "",
-          "footer": "",
-          "timestamp": "false",
-          "savetovariable": "",
-          "savetovariabletype": "temp"
-        },
-        {
           "name": "kolor msg",
           "category": "Message",
           "type": "Send Embed",
@@ -601,26 +545,6 @@
               ]
             }
           ],
-          "channelname": "920323518351151104",
-          "color": "FFFFFF",
-          "title": "kolor",
-          "url": "",
-          "authorname": "",
-          "authorimageurl": "",
-          "authorlink": "",
-          "description": "wybierz kolor nick",
-          "thumbnail": "",
-          "image": "",
-          "footer": "",
-          "timestamp": "false",
-          "savetovariable": "",
-          "savetovariabletype": "temp"
-        },
-        {
-          "name": "kolor msg_1",
-          "category": "Message",
-          "type": "Send Embed",
-          "messageActionRows": [],
           "channelname": "920323518351151104",
           "color": "FFFFFF",
           "title": "kolor",
@@ -1002,10 +926,10 @@
                 "type": "Add Role to User",
                 "messageActionRows": [],
                 "user": "${tempVars.buttoninteraction.member.id}",
-                "rolename": "1005734635466145874"
+                "rolename": "1012621191095263302"
               },
               {
-                "name": "usuwanie",
+                "name": "usuwanie_1_3",
                 "category": "Channel Action",
                 "type": "Delete All Messages",
                 "messageActionRows": [],
@@ -1019,8 +943,8 @@
                 "category": "Channel Action",
                 "type": "Create Channel",
                 "messageActionRows": [],
-                "channelname": "ticket ",
-                "chancategory": "1010510611563696199",
+                "channelname": "bot",
+                "chancategory": "1012625969602899969",
                 "reason": "ticket osoby ${tempVars.buttoninteraction.member.displayName}",
                 "channeltype": "Text",
                 "savetovariable": "kanal_ticket",
@@ -1058,13 +982,13 @@
                   }
                 ],
                 "channelname": "${tempVars.kanal_ticket.id}",
-                "color": "FFFFFF",
-                "title": "ticket",
+                "color": "05A8FF",
+                "title": "🤖Discord Bot",
                 "url": "",
                 "authorname": "",
                 "authorimageurl": "",
                 "authorlink": "",
-                "description": "Witaj <@${tempVars.buttoninteraction.member.id}>\nChces zamowić bota muszisz zpingować xvgoo_\n",
+                "description": "Witaj <@${tempVars.buttoninteraction.member.id}>\nChciał byś zamówić bota poczekaj aż sp4och_ odpisze\n",
                 "thumbnail": "",
                 "image": "",
                 "footer": "",
@@ -1087,8 +1011,8 @@
                 "category": "Channel Action",
                 "type": "Create Channel",
                 "messageActionRows": [],
-                "channelname": "bot",
-                "chancategory": "1012004744211996714",
+                "channelname": "Pluginy",
+                "chancategory": "1012625969602899969",
                 "reason": "ticket osoby ${tempVars.buttoninteraction.user.tag}",
                 "channeltype": "Text",
                 "savetovariable": "kanal_ticket",
@@ -1127,13 +1051,13 @@
                   }
                 ],
                 "channelname": "${tempVars.kanal_ticket.id}",
-                "color": "FFFFFF",
-                "title": "ticket",
+                "color": "03B7FF",
+                "title": "🔧Pluginy",
                 "url": "",
                 "authorname": "",
                 "authorimageurl": "",
                 "authorlink": "",
-                "description": "Witaj <@${tempVars.buttoninteraction.member.id}>\nChces Chces odebrać nagrode lub kupić poczekaj aż ktoś z administracji odpowie na twoja odpowiedz",
+                "description": "Witaj <@${tempVars.buttoninteraction.member.id}>\nChciał byś kupić pluginy poczekaj aż sp4och_ odpisze",
                 "thumbnail": "",
                 "image": "",
                 "footer": "",
@@ -1157,7 +1081,7 @@
                 "type": "Create Channel",
                 "messageActionRows": [],
                 "channelname": "ticket2",
-                "chancategory": "1012004744211996714",
+                "chancategory": "1010510611563696199",
                 "reason": "ticket osoby ${tempVars.buttoninteraction.user.tag}",
                 "channeltype": "Text",
                 "savetovariable": "kanal_ticket",
@@ -1247,7 +1171,7 @@
                   }
                 ],
                 "channelname": "${tempVars.buttoninteraction.channelId}",
-                "color": "FFFFFF",
+                "color": "0DC2FF",
                 "title": "potwierdzenie",
                 "url": "",
                 "authorname": "",
